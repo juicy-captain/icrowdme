@@ -1,0 +1,40 @@
+/* MARGINS */
+.m {
+  margin: 0 !important;
+  @each $var in top, right, bottom, left, '' {
+    @each $mValue in 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60 {
+      @if $var == '' {
+        &__#{$mValue} {
+          margin: #{$mValue}px !important;
+        }
+      } @else {
+        &__#{$var}-#{$mValue} {
+          margin-#{$var}: #{$mValue}px !important;
+        }
+      }
+    }
+
+  }
+}
+
+/* MARGINS END */
+
+/* PADDINGS */
+.p {
+  padding: 0 !important;
+  @each $var in top, right, bottom, left, '' {
+    @each $mValue in 5, 10, 15, 20, 25, 30, 35, 40,45, 50 {
+      @if $var == '' {
+        &__#{$mValue} {
+          padding: #{$mValue}px !important;
+        }
+      } @else {
+        &__#{$var}-#{$mValue} {
+          padding-#{$var}: #{$mValue}px !important;
+        }
+      }
+    }
+  }
+}
+
+/* PADDINGS END */
