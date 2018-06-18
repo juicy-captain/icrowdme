@@ -1,0 +1,32 @@
+@import "../_mixins/button";
+
+.header {
+  &__button {
+
+    @include button(13px, 400, $androidgreen, #fff, none, 15px, 8px, 30px, uppercase);
+
+    &:hover, &:focus {
+      @include hover-btn-darken($androidgreen, 5%, $liver);
+    }
+
+  }
+}
+.menu {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  &>li>a {
+    color: $taupegray-18;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: 600;
+  }
+  &>li>a:hover {
+    text-decoration: none;
+    color: black;
+  }
+}

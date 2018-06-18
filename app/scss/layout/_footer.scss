@@ -1,0 +1,17 @@
+.footer{
+  border-top: 1px solid #ededed;
+  padding: 25px 0;
+  &__text {
+    color: $battleshipgrey;
+    font-size: 13px;
+  }
+  &__partners {
+    padding: 45px 0;
+    & > a > img {
+      filter: grayscale(100%);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}

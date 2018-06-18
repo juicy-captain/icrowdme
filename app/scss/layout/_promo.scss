@@ -1,0 +1,30 @@
+@import "../_mixins/button";
+
+.promo {
+  background-image: linear-gradient(to right, #e6f8fe 50%, #f6f9ec 50%);
+  &__heading {
+    font-family: "MontserratSemiBold" , sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: $liver;
+  }
+  &__text {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 35px 0;
+    color: $liver;
+  }
+  &__button-prop {
+    @include button(15px, 400, $stongblue, #ffffff ,none, 8px, 14px, 20px);
+    &:hover, &:focus {
+      @include hover-btn-darken($stongblue, 5%, black)
+    }
+  }
+
+  &__button-buyers {
+    @include button(15px, 400, $androidgreen, #ffffff ,none, 8px, 14px, 20px);
+    &:hover, &:focus {
+      @include hover-btn-darken($androidgreen, 5%, black)
+    }
+  }
+}

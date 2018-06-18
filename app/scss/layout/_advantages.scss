@@ -1,0 +1,85 @@
+.circle {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background-color: $davygrey;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.active-tab {
+  background-color: $androidgreen;
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    border-image: linear-gradient(to right, $gray-inactive 15%, $androidgreen 15%, $androidgreen 85%, $gray-inactive, $gray-inactive 100%);
+    border-image-slice: 1;
+  }
+}
+
+.tab-text {
+  font-size: 33px;
+  color: $dimgray-2;
+  line-height: 45px;
+  padding-left: 20px;
+}
+
+.tab-content {
+  &__title {
+    font-size: 25px;
+    color: $androidgreen;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-size: 17px;
+    color: $dimgray;
+  }
+}
+
+.tabs {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  & > input {
+    display: none;
+    &:checked + label {
+      color: #000;
+      background: #FFF;
+    }
+  }
+  & > div {
+    display: none;
+    padding: 80px 40px 100px 40px;
+    background: #FFF;
+  }
+  & > label {
+    position: relative;
+    width: 30%;
+    display: inline-flex;
+    padding: 40px 0;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: $taupegray-18;
+    background: #FFF;
+    cursor: pointer;
+    justify-content: center;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      border-bottom: 1px solid $gray-inactive;
+      width: 100%;
+    }
+  }
+}
+
+#tab_1:checked ~ #txt_1,  #tab_2:checked ~ #txt_2,  #tab_3:checked ~ #txt_3 {
+  display: block;
+}

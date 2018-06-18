@@ -1,0 +1,117 @@
+@import "../_mixins/button";
+
+.features {
+  padding-top: 80px;
+  &__wrap {
+    padding-bottom: 40px
+  }
+  &__heading {
+    font-size: 29px;
+    color: $liver;
+    margin-bottom: 25px;
+  }
+  &__text {
+    color: $taupegray-2;
+    line-height: 2;
+    text-align: left;
+  }
+  &__button {
+    @include button(15px, 600, #ffffff, $liver , 1px solid $liver, 10px, 14px, 20px);
+    &:hover, &:focus {
+      @include hover-btn-darken(#fff, 10%, #000);
+    }
+  }
+}
+.project-wrap {
+  margin: 30px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+}
+.project-heading {
+  height: 226px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &__price {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    background-color: $stongblue;
+    display: inline-block;
+    padding: 10px 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    right: 0;
+  }
+  &__status {
+    z-index: 2;
+    color: #fff;
+    position: relative;
+    &:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      position: absolute;
+      z-index: -1;
+      border-top-left-radius: 10px;
+      border: 40px solid;
+      border-color: $androidgreen transparent transparent $androidgreen;
+    }
+    &-new {
+      font-family: "MontserratSemiBold" , sans-serif;
+      display: inline-block;
+      transform: rotate(-45deg);
+      padding: 10px 5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
+.project-description {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 25px;
+  &__title {
+    font-size: 17px;
+    color: $outerspace;
+    font-weight: bold;
+    margin: 0;
+  }
+  &__text {
+    font-size: 13px;
+    color: $outerspace;
+    text-align: left;
+    padding: 20px 0;
+  }
+  &__prop {
+    font-size: 13px;
+    font-weight: 600;
+    color: $taupegray-2;
+  }
+  &__details {
+    font-size: 14px;
+    color: $outerspace;
+    font-weight: 600;
+  }
+}
+.progressbar {
+  background-color: #e3e3e3;
+  border-radius: 15px;
+  padding: 0;
+  &__value {
+    background-color: $androidgreen;
+    height: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}

@@ -1,0 +1,11 @@
+.owl-nav {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+}
+.owl-next, .owl-prev {
+  margin: 0 1em;
+}
+.owl-next:focus, .owl-prev:focus {
+  outline: none;
+}

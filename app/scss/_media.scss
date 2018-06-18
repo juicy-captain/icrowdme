@@ -1,0 +1,107 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .js #menu {
+    display:none;
+  }
+
+  .js .slicknav_menu {
+    display:block;
+  }
+  .header__button {
+    width: 30%;
+  }
+  .tab-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .promo > div {
+    align-items: baseline;
+  }
+  .promo-description_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promo__heading {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .promo__text {
+    text-align: center;
+  }
+  .features__wrap {
+    display: block!important;
+  }
+  .features__button {
+    margin-top: 15px;
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .tab-text {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .wrap {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .promo {
+    background-image: linear-gradient(to bottom ,#e6f8fe 50%,#f6f9ec 50%);
+  }
+  .promo > div {
+    display: block!important;
+  }
+  .owl-nav {
+    top:94%;
+    right: 0%;
+  }
+  .tab-text {
+    display: none;
+  }
+  .tabs>label {
+    justify-content: center;
+  }
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

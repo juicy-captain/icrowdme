@@ -1,0 +1,35 @@
+@mixin button ($font-size, $font-weight, $background-color:$yellowgreen, $color:#ffffff, $border:none, $border-radius:5px, $p-tb:14px, $p-rl:20px, $text-transform:none) {
+  display: inline-block;
+  outline: 0;
+  text-decoration: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  transition: all 0.2s linear 0s;
+
+  font-size: $font-size;
+  font-weight: $font-weight;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $p-tb $p-rl;
+  text-transform: $text-transform;
+}
+
+@mixin hover-btn-darken ($background-color: inherit, $value:5%, $color:inherit) {
+  outline: none;
+  background-color: darken($background-color, $value);
+  color: $color;
+}
+
+@mixin hover-btn-lighten ($background-color: inherit, $value:5%, $color:inherit) {
+  outline: none;
+  background-color: lighten($background-color, $value);
+  color: $color;
+}

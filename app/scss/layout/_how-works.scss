@@ -1,0 +1,19 @@
+.how-works {
+  padding: 100px 0;
+  &__heading {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 70px 0;
+    color: $liver;
+  }
+  &__text {
+    opacity: 0.71;
+    color: $liver;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
