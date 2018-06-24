@@ -1,0 +1,52 @@
+{
+  "index": {
+    "title": "icrowdme",
+    "slider": [
+      {
+        "url": "img/slider/slide1.png",
+        "text_big": "Intellectual Property has the Shelf Life",
+        "text_small": "of a Banana",
+        "button_text": "Become a Member",
+        "button_url": "/"
+      },
+      {
+        "url": "img/slider/slide2.jpeg",
+        "text_big": "Intellectual Property has the Shelf Life",
+        "text_small": "of a Banana",
+        "button_text": "Become a Member",
+        "button_url": "/"
+      },
+      {
+        "url": "img/slider/slide3.jpeg",
+        "text_big": "Intellectual Property has the Shelf Life",
+        "text_small": "of a Banana",
+        "button_text": "Become a Member",
+        "button_url": "/"
+      }
+    ],
+    "how_works": {
+      "icon": "img/icons/icon1.png",
+      "heading": "Our work is the presentation <br> of our capabilities.",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+      "p2": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "promo": [
+      {
+        "icon": "img/icons/icon2.png",
+        "heading": "Find Properties",
+        "text": "Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.",
+        "button_text": "Become A Member",
+        "button_url": "#",
+        "button_css": "promo__button-prop"
+      },
+      {
+        "icon": "img/icons/icon3.png",
+        "heading": "Find Buyers",
+        "text": "Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.",
+        "button_text": "Submit Your Project",
+        "button_url": "#",
+        "button_css": "promo__button-buyers"
+      }
+    ]
+  }
+}

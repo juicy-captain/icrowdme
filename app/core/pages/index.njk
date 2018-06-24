@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+{% block title %}
+    <title>{{index.title}}</title>
+{% endblock %}
+
+
+
+{% block header %}
+    {% include "partials/header.njk" %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        {% include "partials/slider.njk" %}
+        {% include "partials/how-works.njk" %}
+        {% include "partials/tabs.njk" %}
+        {% include "partials/promo.njk" %}
+        {% include "partials/features.njk" %}
+        {% include "partials/testimonials.njk" %}
+    </main>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/footer.njk" %}
+{% endblock %}
