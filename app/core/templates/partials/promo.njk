@@ -1,0 +1,24 @@
+<section class="promo">
+    <div class="container d-flex">
+        {% for el in index.promo %}
+            <div class="col-12 col-sm-6">
+                <div class="row p__top-45 p__bottom-45">
+                    <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center">
+                        <img class="img-responsive" src="{{ el.icon }}" alt="icon">
+                    </div>
+                    <div class="col-12 col-lg-7 promo-description_wrap">
+                        <div class="promo__heading">
+                            {{ el.heading }}
+                        </div>
+                        <div class="promo__text">
+                            {{ el.text }}
+                        </div>
+                        <a href="{{ el.button_url }}" class="{{ el.button_css }}">
+                            {{ el.button_text }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<section>
+    <div class="owl-carousel">
+        {% for el in index.slider %}
+            <div class="item">
+                <div class="slide" style="background-image:url({{ el.url }});">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-wrap justify-content-center">
+                                <div class="slide__text">{{ el.text_big }} <br>
+                                    <span class="slide__text-small">{{ el.text_small }}</span>
+                                </div>
+                                <a href="{{ el.button_url }}" class="slide__button">{{ el.button_text }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
